@@ -64,7 +64,7 @@ For each generated image, the tool creates:
 <p>
 <img src="examples/police_full.jpg" width="400">
 <img src="examples/police_outline.png" width="400">
-<img src="examples/police_colors.PNF" width="400">
+<img src="examples/police_colors.PNG" width="400">
 
 ### Bear
 *Prompt: "A bear leaving his cave in the morning."*
