@@ -56,8 +56,8 @@ For each generated image, the tool creates:
 *Prompt: "A 2D comic style illustration of a firefighter fighting a house fire."*
 <p>
 <img src="examples/firefighter_full.jpg" width="400">
-<img src="examples/firefighter_outline.png" width="400">
-<img src="examples/firefighter_colors.png" width="400">
+<img src="examples/firefighter_outline.PNG" width="400">
+<img src="examples/firefighter_colors.PNG" width="400">
 
 ### Police Chase
 *Prompt: "A 2D comic style illustration of a police car chasing a thief with a dog jumping towards the thief."*
@@ -71,4 +71,4 @@ For each generated image, the tool creates:
 <p>
 <img src="examples/bear_full.jpg" width="400">
 <img src="examples/bear_outline.png" width="400">
-<img src="examples/bear_colors.png" width="400">
+<img src="examples/bear_colors.PNG" width="400">
