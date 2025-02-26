@@ -20,7 +20,7 @@ A tool that creates color-by-numbers templates from DALL-E 3 generated images us
 
 ## Requirements
 - Python 3.x.
-- OpenAI API key set as OPEN_API_KEY environment variable.
+- OpenAI API key set as OPENAI_API_KEY environment variable.
 - Paint by numbers generator Windows executable 
 
 ## Installation
