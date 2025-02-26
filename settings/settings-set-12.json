@@ -1,0 +1,70 @@
+{
+    "randomSeed": 7707,
+    "kMeansNrOfClusters": 12,
+    "kMeansMinDeltaDifference": 1,
+    "kMeansClusteringColorSpace": 0,
+
+    "kMeansColorRestrictions": [
+        "white (101)", 
+        "cadmium yellow (107)", 
+        "dark cadmium orange (115)", 
+        "deep scarlet red (219)", 
+        "magenta (133)", 
+        "light ultramarine (140)", 
+        "phthalo blue (110)", 
+        "emerald green (163)", 
+        "light green (171)", 
+        "burnt ochre (187)", 
+        "walnut brown (177)", 
+        "black (199)"
+    ],
+    "colorAliases": {
+        "white (101)": [255, 255, 255], 
+        "cadmium yellow (107)": [255, 213, 48], 
+        "dark cadmium orange (115)": [244, 121, 51], 
+        "deep scarlet red (219)": [232, 73, 94], 
+        "magenta (133)": [147, 78, 103], 
+        "light ultramarine (140)": [101, 154, 210], 
+        "phthalo blue (110)": [11, 125, 194], 
+        "emerald green (163)": [12, 176, 116], 
+        "light green (171)": [160, 209, 133], 
+        "burnt ochre (187)": [216, 151, 99], 
+        "walnut brown (177)": [93, 79, 72], 
+        "black (199)": [5, 5, 5]
+    },
+  
+    "removeFacetsSmallerThanNrOfPoints": 80,
+    "removeFacetsFromLargeToSmall": true,
+    "maximumNumberOfFacets": 100000000,
+    "nrOfTimesToHalveBorderSegments": 2,
+
+    "narrowPixelStripCleanupRuns": 3,    
+    
+    "resizeImageIfTooLarge": true,
+    "resizeImageWidth": 1024,
+    "resizeImageHeight": 1024,
+
+    "outputProfiles": [
+        {
+            "name": "full",
+            "svgShowLabels": true,
+            "svgFillFacets": true,
+            "svgShowBorders": true,
+            "svgSizeMultiplier": 3,
+            "svgFontSize": 80,
+            "svgFontColor": "#333",
+            "filetype": "jpg",
+            "filetypeQuality": 300
+        },
+        {
+            "name": "outline",
+            "svgShowLabels": true,
+            "svgFillFacets": false,
+            "svgShowBorders": true,
+            "svgSizeMultiplier": 3,
+            "svgFontSize": 80,
+            "svgFontColor": "#999999",
+            "filetype": "png"
+        }
+    ]
+}

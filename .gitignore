@@ -1,0 +1,10 @@
+generator/
+images/
+temp/
+tmp/
+venv/
+.venv/
+.temp/
+.tmp/
+*.bat
+color_schemes/
