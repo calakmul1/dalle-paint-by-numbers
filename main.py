@@ -148,7 +148,7 @@ def create_pdf(save_path, uuid_str, image_save_path_outline, image_save_path_ful
 
     available_width = pagesize[0] - (2 * margin)
     available_height = pagesize[1] - (2 * margin)
-    start_x = margin + (available_width - total_width) / 2
+    start_x = margin + (available_width - total_width) / 2 - 100
     start_y = pagesize[1] - margin - (available_height - total_height) / 2
 
     for i, color in enumerate(color_data):
@@ -176,7 +176,7 @@ def get_openai_images(theme, number, context=(
     print("Generating images with OpenAI DALL-E...")
     print("Creating prompt...")
     
-    API_KEY = os.getenv('OPEN_AIAPI_KEY')
+    API_KEY = os.getenv('OPENAI_API_KEY')
     if not API_KEY:
         raise ValueError("OPENAI_API_KEY environment variable is not set")
     client = OpenAI(api_key=API_KEY)
