@@ -87,7 +87,13 @@ def save_image(save_path):
 
     quantized_image_pil.save(image_save_path_full)
     image_save_path_original.write_bytes(original_source_path.read_bytes())
-    image_save_path_outline.write_bytes(outline_source_path.read_bytes())
+
+    outline_image = Image.open(outline_source_path).convert('RGBA')
+    background = Image.new('RGBA', outline_image.size, (255, 255, 255, 255))
+    white_image = Image.alpha_composite(background, outline_image)
+    white_image = white_image.convert('RGB')
+    white_image.save(image_save_path_outline)
+    
     image_save_path_json.write_bytes(json_source_path.read_bytes())
 
     return uuid_str, image_save_path_original, image_save_path_outline, image_save_path_full, image_save_path_json
@@ -141,7 +147,7 @@ def create_pdf(save_path, uuid_str, image_save_path_outline, image_save_path_ful
     margin = 0 
     circle_size = 30
     y_spacing = 45
-    x_spacing = 220
+    x_spacing = 250
 
     total_width = x_spacing * (colors_per_row - 1) + circle_size
     total_height = y_spacing * (num_rows - 1) + circle_size
